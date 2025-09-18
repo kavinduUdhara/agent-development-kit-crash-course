@@ -55,7 +55,7 @@ for event in runner.run(
             print(f"Final Response: {event.content.parts[0].text}")
 
 print("==== Session Event Exploration ====")
-session = session_service_stateful.get_session(
+session = session_service_stateful.get_session( 
     app_name=APP_NAME, user_id=USER_ID, session_id=SESSION_ID
 )
 
